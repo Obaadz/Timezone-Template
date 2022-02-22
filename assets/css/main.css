@@ -453,6 +453,11 @@ header .menu {
   margin-bottom: 10px;
   border-bottom: 2px solid var(--secondary-color);
   overflow: hidden;
+  transition: border 0.4s;
+}
+
+.popular .content .item .img-box:hover {
+  border-bottom-color: transparent;
 }
 
 @media (max-width: 767px) {
