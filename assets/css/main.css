@@ -92,6 +92,7 @@ p {
 img {
   vertical-align: middle;
 }
+
 /* Components */
 .btn {
   position: relative;
@@ -118,6 +119,14 @@ img {
 }
 .btn:hover::before {
   padding-right: calc(100% + 20px);
+}
+
+.btn-2 {
+  --h3-color: #f12121;
+}
+
+.btn-2::before {
+  --secondary-color: #444;
 }
 
 /* Header */
@@ -511,4 +520,12 @@ header .menu {
 
 .popular .content .item span {
   font-weight: 600;
+}
+
+.popular .btn {
+  left: 50%;
+  margin-top: 100px;
+  transform: translateX(-50%);
+  font-size: 1.4em;
+  padding: 10px 20px;
 }
