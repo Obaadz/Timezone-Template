@@ -529,3 +529,62 @@ header .menu {
   font-size: 1.4em;
   padding: 10px 20px;
 }
+
+/* choices */
+.choice {
+  margin-bottom: 200px;
+}
+
+.choice .container {
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+}
+
+.choice article {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.choice article .content * + * {
+  margin-top: 40px;
+}
+
+.choice article .content h2 {
+  font-size: 4em;
+}
+
+.choice article .content p {
+  color: #777;
+}
+
+.choice article .content .btn {
+  font-size: 1.5em;
+}
+
+@media (max-width: 991px) {
+  .choice article .content h2 {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 767px) {
+  .choice article {
+    grid-template-columns: auto;
+    padding: 0 20px;
+  }
+  .choice article .content h2 {
+    font-size: 2em;
+  }
+}
+
+.choice article img {
+  max-width: 100%;
+}
+
+.choice article:last-child img {
+  order: -1;
+}
