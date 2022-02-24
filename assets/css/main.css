@@ -61,6 +61,7 @@ a {
 h1,
 h2,
 h3,
+h4,
 p,
 ul {
   margin: 0;
@@ -587,4 +588,52 @@ header .menu {
 
 .choice article:last-child img {
   order: -1;
+}
+
+/* method */
+.method {
+  margin-bottom: 150px;
+}
+
+.method .container {
+  background-color: #ea2000;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  gap: 40px;
+}
+@media (max-width: 991px) {
+  .method .container {
+    flex-wrap: wrap;
+  }
+}
+.method .box {
+  color: #fff;
+}
+
+.method .box i {
+  font-size: 2em;
+}
+
+.method .box h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3em;
+  margin: 10px 0;
+}
+
+.method .box p {
+  color: #d3d1d1;
+  max-width: 33ch;
+}
+
+@media (max-width: 767px) {
+  .method .container {
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .method .box p {
+    max-width: max-content;
+  }
 }
