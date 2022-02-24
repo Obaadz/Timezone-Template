@@ -61,6 +61,7 @@ a {
 h1,
 h2,
 h3,
+h4,
 p,
 ul {
   margin: 0;
@@ -587,4 +588,127 @@ header .menu {
 
 .choice article:last-child img {
   order: -1;
+}
+
+/* method */
+.method {
+  margin-bottom: 150px;
+}
+
+.method .container {
+  background-color: #ea2000;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  gap: 40px;
+}
+@media (max-width: 991px) {
+  .method .container {
+    flex-wrap: wrap;
+  }
+}
+.method .box {
+  color: #fff;
+}
+
+.method .box i {
+  font-size: 2em;
+}
+
+.method .box h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3em;
+  margin: 10px 0;
+}
+
+.method .box p {
+  color: #d3d1d1;
+  max-width: 33ch;
+}
+
+@media (max-width: 767px) {
+  .method .container {
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .method .box p {
+    max-width: max-content;
+  }
+}
+
+/* footer */
+footer {
+  padding: 0 20px;
+}
+footer .content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-bottom: 100px;
+}
+
+footer .content > article p {
+  color: #868c98;
+}
+
+footer .content article {
+  font-family: "Roboto", sans-serif;
+  width: 250px;
+  display: grid;
+  gap: 20px;
+}
+
+@media (max-width: 767px) {
+  footer .content article {
+    width: 100%;
+  }
+}
+
+footer .content article ul li + li {
+  margin-top: 15px;
+}
+
+footer .content article h4 {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+footer .content article ul a {
+  color: #868c98;
+  font-weight: 300;
+  transition: color 0.3s, padding 0.3s;
+}
+
+footer .content article ul a:hover {
+  color: #ff2020;
+  padding-left: 5px;
+}
+
+footer .copyrights {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 100px;
+}
+
+footer .copyrights p {
+  color: #888;
+}
+
+footer .copyrights p a,
+footer .copyrights ul a:hover {
+  color: #ff2020;
+}
+
+footer .copyrights ul {
+  display: flex;
+  gap: 20px;
+}
+
+footer .copyrights ul a {
+  transition: color 0.3s;
 }
